@@ -7,9 +7,10 @@ body{
     margin-right: 60px;
 }
 
-.Title{
+.title{
     font-weight: bold;
     font-size: 20px;
+    margin: 0px;
 }
 
 .nav-bar{
@@ -19,23 +20,17 @@ body{
 }
 
 .link-menu{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    gap: 6px;
 }
 .link-menu-item{
     display: flex;
-    margin-left: 3px;
-    margin-right: 3px;
     width: 70px;
     justify-content: center;
 }
 
-.link-menu-item:hover{
+.link-menu-item a:hover{
     font-weight: bold;
     text-decoration: underline #9611D0 2px;
     cursor: pointer; 
-}
-
-.nav-bar-item{
-    display: inline; 
 }
