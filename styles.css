@@ -2,9 +2,10 @@ body{
     color: #E0E0E0;
     background-color: #161616;
     font-family: Inter;
-    margin-top: 15px;
-    margin-left: 60px;
-    margin-right: 60px;
+}
+
+h1{
+    font-size: 45px;margin-bottom: 0;
 }
 
 .title{
@@ -17,6 +18,7 @@ body{
     display: grid;
     grid-template-columns: 15fr 1fr ;
     justify-items: start;
+    margin: 0 50px;
 }
 
 .link-menu{
@@ -33,4 +35,39 @@ body{
     font-weight: bold;
     text-decoration: underline #9611D0 2px;
     cursor: pointer; 
+}
+
+.welcome{
+    margin-bottom: 20px;
+}
+
+.page{
+    max-width: 720px;
+    margin:0 auto;
+    padding: 24px;
+}
+
+.post-grid{
+    max-width: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 25px;
+    margin:0 auto;
+    justify-items: center;
+}
+
+.latest-post-body{
+    width: 1fr;
+    height: 240px;
+    margin-bottom: 40px;
+    background-color: #3D3D3D;
+    border-radius: 15px;
+    
+}
+
+.post{
+    background-color: #3D3D3D;
+    width: 210px;
+    height: 210px;
+    border-radius: 15px;
 }
