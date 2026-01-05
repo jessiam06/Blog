@@ -25,10 +25,15 @@ h1{
     display: flex;
     gap: 6px;
 }
+
+.link{
+    color: #E0E0E0;
+    text-decoration: none;
+}
 .link-menu-item{
     display: flex;
     width: 70px;
-    justify-content: center;
+    justify-content: right;
 }
 
 .link-menu-item a:hover{
