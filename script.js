@@ -18,28 +18,39 @@ class PostCard {
     render () {
         // Render the Post
 
-        // title
-        const h2 = document.createElement("h2");
-        h2.textContent = this.title;
+        // thumbnail
+        const thumbnail_container = document.createElement("div");
+        const thumbnail = document.createElement("img");
+        thumbnail_container.className = "post-thumbnail"
+        thumbnail.src = this.thumbnail;
+        thumbnail_container.appendChild(thumbnail);
 
-        //date
-        const date = document.createElement("time");
-        date.textContent = this.date;
+        // metadata
+        const metadata = document.createElement("div");
+        metadata.className = "metadata";
+
+        //metadata_grid
+        const metadata_grid = document.createElement("div");
+        metadata_grid.className = "metadata_grid";
+
+
+        // title
+        const title = document.createElement("h2");
+        title.className = "post-title";
+        title.textContent = this.title;
+
+        //date and read time
+        const date_and_readtime = document.createElement("time");
+        date_and_readtime.className = "post-date";
+        date_and_readtime.textContent = this.date + " | " + this.readtime;
 
         // description
         const desc = document.createElement("p");
+        desc.className = "post-desc";
         desc.textContent = this.description;
 
-        // thumbnail
-        const thumbnail = document.createElement("img");
-        thumbnail.src = this.thumbnail;
-        
-        // read time 
-        const read_time = document.createElement("p");
-        read_time.textContent = this.readtime;
-
-
-        this.el.append(h2,date,desc);
+        metadata.append(title,date_and_readtime);
+        this.el.append(thumbnail_container,metadata);
     }
 }
 
