@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Josiah Essiam</title>
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="\static\styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -34,19 +34,19 @@
 
     <div class="page">
         <div class="head">
-            <h1 class="title">{{ Title }}</h1>
-            <h2 class="subtitle">{{Subtitle}}.</h2>
+            <h1 class="title">{{Title}}</h1>
+            <h2 class="subtitle">{{Subtitle}}</h2>
 
             <div class="article-metadata">
                 {{date}} | {{readtime}} | {{tags}}
             </div>
 
             <div class="head-image">
-                <img src="" alt="{{Thumbnail}}">
+                <img src="{{Thumbnail}}">
             </div>
         </div>
         <article class="post-content">
-            {{Content}}
+            {{content}}
         </article>
     </div>
 

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josiah Essiam</title>
+
+    <link rel="stylesheet" href="\static\styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <div>
+           <h1 class="name">Josiah Essiam</h1>
+        </div>
+
+        <div class="link-menu">
+            <div class="link-menu-item">
+                <a class="link" href="/">Home</a>
+            </div>
+
+            <div class="link-menu-item">
+                <a class="link" href="https://github.com/jessiam06" target="_blank">GitHub</a>
+            </div>
+
+            <div class="link-menu-item">
+                <a class="link" href="https://www.linkedin.com/in/josiah-essiam-0644a5284/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page">
+        <div class="head">
+            <h1 class="title">What is a Neural Network?</h1>
+            <h2 class="subtitle">Exploring the Foundations of Machine Intelligence.</h2>
+
+            <div class="article-metadata">
+                2026-01-15 | 6 min | web,static-sites,programming
+            </div>
+
+            <div class="head-image">
+                <img src="/Assets/nn thumbnail.png">
+            </div>
+        </div>
+        <article class="post-content">
+            <h1>Neural Networks: A Gentle Overview</h1>
+<p><em>Neural networks</em> are a class of <strong>machine learning models</strong> inspired by the structure of the human brain. They are especially powerful for tasks like image recognition, natural language processing, and function approximation.</p>
+<hr />
+<h2>What Is a Neural Network?</h2>
+<p>A <strong>neural network</strong> is composed of layers of interconnected nodes (called <em>neurons</em>). Each neuron:
+- Receives inputs<br />
+- Applies a weighted sum<br />
+- Passes the result through an <em>activation function</em></p>
+<blockquote>
+<p>In short: <strong>inputs → computation → output</strong></p>
+</blockquote>
+<hr />
+<h2>Basic Architecture</h2>
+<h3>1. Input Layer</h3>
+<p>The input layer receives raw data, such as pixel values or numerical features.</p>
+<h3>2. Hidden Layers</h3>
+<p>Hidden layers perform most of the computation. Adding more hidden layers leads to a <em>deep</em> neural network.</p>
+<h3>3. Output Layer</h3>
+<p>The output layer produces the final prediction, such as a class label or a number.</p>
+<hr />
+<h2>The Math Behind a Neuron</h2>
+<p>A single neuron computes:</p>
+<p>$$
+z = \sum_{i=1}^{n} w_i x_i + b
+$$</p>
+<p>and then applies an activation function:</p>
+<p>$$
+a = \sigma(z)
+$$</p>
+<p>where:
+- ( w_i ) are weights<br />
+- ( x_i ) are inputs<br />
+- ( b ) is a bias<br />
+- ( \sigma ) might be <em>ReLU</em>, <em>sigmoid</em>, or <em>tanh</em></p>
+<hr />
+<h2>Example Code (Python)</h2>
+<p>Below is a <strong>very small example</strong> using NumPy:</p>
+<p>```python
+import numpy as np</p>
+<p>def relu(x):
+    return np.maximum(0, x)</p>
+<p>x = np.array([1.0, -2.0, 3.0])
+w = np.array([0.5, 0.2, -0.1])
+b = 0.1</p>
+<p>z = np.dot(w, x) + b
+a = relu(z)</p>
+<p>print(a)</p>
+        </article>
+    </div>
+
+</body>
+

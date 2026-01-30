@@ -1,5 +1,6 @@
 ---
 title: Designing a Minimal Static Site Generator
+subtitle: Exploring the Foundations of Machine Intelligence.
 date: 2026-01-15
 description: Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae.
 thumbnail:/Assets/nn thumbnail.png

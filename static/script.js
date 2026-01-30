@@ -1,5 +1,11 @@
 class PostCard {
     constructor (data){
+        // link
+        this.link = data.link;
+        this.anchor = document.createElement("a");
+        this.anchor.href = this.link;
+        this.anchor.style.textDecoration = "none"
+        this.anchor.style.color = "inherit"
         // Root element
         this.el = document.createElement("article"); // .el is convention for root element. 
         this.el.className = "post-card"
@@ -51,19 +57,20 @@ class PostCard {
 
         metadata.append(title,date_and_readtime);
         this.el.append(thumbnail_container,metadata);
+        this.anchor.appendChild(this.el)
     }
 }
 
 
 const container = document.getElementById("post-grid");
 
-fetch("posts.json")
+fetch("/static/posts.json")
     .then(function(response){
         return response.json();
     })
     .then(function(posts){
         for (let i = 0; i < posts.length; i++){
             const card = new PostCard(posts[i]);
-            container.appendChild(card.el);
+            container.appendChild(card.anchor);
         }
     })

@@ -1,14 +1,56 @@
-<hr />
-<p>title: Designing a Minimal Static Site Generator
-date: 2026-01-15
-tags: web, static-sites, programming
-readtime: 6 min</p>
-<hr />
-<h2>Introduction</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josiah Essiam</title>
+
+    <link rel="stylesheet" href="\static\styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <div>
+           <h1 class="name">Josiah Essiam</h1>
+        </div>
+
+        <div class="link-menu">
+            <div class="link-menu-item">
+                <a class="link" href="/">Home</a>
+            </div>
+
+            <div class="link-menu-item">
+                <a class="link" href="https://github.com/jessiam06" target="_blank">GitHub</a>
+            </div>
+
+            <div class="link-menu-item">
+                <a class="link" href="https://www.linkedin.com/in/josiah-essiam-0644a5284/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page">
+        <div class="head">
+            <h1 class="title">Designing a Minimal Static Site Generator</h1>
+            <h2 class="subtitle">Exploring the Foundations of Machine Intelligence.</h2>
+
+            <div class="article-metadata">
+                2026-01-15 | 6 min | web,static-sites,programming
+            </div>
+
+            <div class="head-image">
+                <img src="/Assets/nn thumbnail.png">
+            </div>
+        </div>
+        <article class="post-content">
+            <h2>Introduction</h2>
 <p>This post is a <strong>test document</strong> designed to exercise the full Markdown → HTML pipeline of a static site generator.</p>
 <p>It includes <em>inline formatting</em>, block elements, math, code, and tables — the kinds of things a technical blog actually needs.</p>
 <h2>Basic Text Formatting</h2>
-<p>You can write text in <strong>bold</strong>, <em>italic</em>, or even <strong><em>both at the same time</em></strong>.</p> 
+<p>You can write text in <strong>bold</strong>, <em>italic</em>, or even <strong><em>both at the same time</em></strong>.</p>
 <p>You can also include inline code like <code>git push -u origin main</code>, which should be rendered in a monospaced font.</p>
 <p>Here’s a link to an external resource:<br />
 <a href="https://developer.mozilla.org">MDN Web Docs</a></p>
@@ -42,7 +84,7 @@ class PostCard {
 }
 ```</p>
 <h3>Python example</h3>
-<p><code>
+<p><code>python
 def build_site(posts, templates):
     for post in posts:
         render_post(post, templates)</code></p>
@@ -62,3 +104,8 @@ def build_site(posts, templates):
 | Syntax highlighting | ✅         | Nice to have     |
 | Math rendering      | ⚠️        | Needs JS         |
 | RSS generation      | ❌         | Future feature   |</p>
+        </article>
+    </div>
+
+</body>
+

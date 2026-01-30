@@ -1,6 +1,7 @@
 [
   {
     "title": "Designing a Minimal Static Site Generator",
+    "subtitle": "Exploring the Foundations of Machine Intelligence.",
     "date": "2026-01-15",
     "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae.",
     "thumbnail": "/Assets/nn thumbnail.png",
@@ -9,10 +10,12 @@
       "static-sites",
       "programming"
     ],
-    "readtime": "6 min"
+    "readtime": "6 min",
+    "link": "/build/posts/Designing a Minimal Static Site Generator.html"
   },
   {
     "title": "What is a Neural Network?",
+    "subtitle": "Exploring the Foundations of Machine Intelligence.",
     "date": "2026-01-15",
     "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae.",
     "thumbnail": "/Assets/nn thumbnail.png",
@@ -21,10 +24,12 @@
       "static-sites",
       "programming"
     ],
-    "readtime": "6 min"
+    "readtime": "6 min",
+    "link": "/build/posts/What is a Neural Network.html"
   },
   {
     "title": "Super Simple Post",
+    "subtitle": "Exploring the Foundations of Machine Intelligence.",
     "date": "2026-01-15",
     "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae.",
     "thumbnail": "/Assets/nn thumbnail.png",
@@ -33,6 +38,7 @@
       "static-sites",
       "programming"
     ],
-    "readtime": "6 min"
+    "readtime": "6 min",
+    "link": "/build/posts/Super Simple Post.html"
   }
 ]
