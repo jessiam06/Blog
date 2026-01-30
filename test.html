@@ -1,0 +1,64 @@
+<hr />
+<p>title: Designing a Minimal Static Site Generator
+date: 2026-01-15
+tags: web, static-sites, programming
+readtime: 6 min</p>
+<hr />
+<h2>Introduction</h2>
+<p>This post is a <strong>test document</strong> designed to exercise the full Markdown → HTML pipeline of a static site generator.</p>
+<p>It includes <em>inline formatting</em>, block elements, math, code, and tables — the kinds of things a technical blog actually needs.</p>
+<h2>Basic Text Formatting</h2>
+<p>You can write text in <strong>bold</strong>, <em>italic</em>, or even <strong><em>both at the same time</em></strong>.</p> 
+<p>You can also include inline code like <code>git push -u origin main</code>, which should be rendered in a monospaced font.</p>
+<p>Here’s a link to an external resource:<br />
+<a href="https://developer.mozilla.org">MDN Web Docs</a></p>
+<h2>Lists</h2>
+<h3>Unordered list</h3>
+<ul>
+<li>Static site generators are fast</li>
+<li>They are secure</li>
+<li>They are easy to deploy</li>
+<li>They scale well for content-heavy sites</li>
+</ul>
+<h3>Ordered list</h3>
+<ol>
+<li>Write content in Markdown</li>
+<li>Parse metadata (frontmatter)</li>
+<li>Convert Markdown to HTML</li>
+<li>Apply templates</li>
+<li>Output static files</li>
+</ol>
+<h2>Code Blocks</h2>
+<h3>JavaScript example</h3>
+<p>```js
+class PostCard {
+  constructor(data) {
+    this.title = data.title;
+    this.date = data.date;
+  }</p>
+<p>render() {
+    console.log(this.title);
+  }
+}
+```</p>
+<h3>Python example</h3>
+<p><code>
+def build_site(posts, templates):
+    for post in posts:
+        render_post(post, templates)</code></p>
+<h2>Mathematics</h2>
+<h3>Inline math</h3>
+<p>When working with vectors, the dot product $a \cdot b$ gives a scalar value.</p>
+<h3>Block math</h3>
+<p>$$A = \begin{pmatrix} 1 &amp; 2 &amp; 3 \ 4 &amp; 5 &amp; 6 \ 7 &amp; 8 &amp; 9 \end{pmatrix}$$
+​​</p>
+<p>Another common expression:</p>
+<p>$$\int_0^1 x^2 \, dx = \frac{1}{3}$$​</p>
+<p>(Your generator will likely leave this untouched and let MathJax or KaTeX handle it.)</p>
+<h2>Tables</h2>
+<p>| Feature             | Supported | Notes            |
+| ------------------- | --------- | ---------------- |
+| Markdown parsing    | ✅         | Core requirement |
+| Syntax highlighting | ✅         | Nice to have     |
+| Math rendering      | ⚠️        | Needs JS         |
+| RSS generation      | ❌         | Future feature   |</p>

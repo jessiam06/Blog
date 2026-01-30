@@ -27,7 +27,7 @@ class PostCard {
 
         // metadata
         const metadata = document.createElement("div");
-        metadata.className = "metadata";
+        metadata.className = "post-card-metadata";
 
         //metadata_grid
         const metadata_grid = document.createElement("div");
@@ -62,8 +62,8 @@ fetch("posts.json")
         return response.json();
     })
     .then(function(posts){
-        for (let i = 0; i < 9; i++){
-            const card = new PostCard(posts[0]);
+        for (let i = 0; i < posts.length; i++){
+            const card = new PostCard(posts[i]);
             container.appendChild(card.el);
         }
     })

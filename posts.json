@@ -1,11 +1,38 @@
 [
-    {
-        "title": "But What is a Neural Network?",
-        "date" : "26th Jan 2026",
-        "description" : "Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae. ",
-        "thumbnail" : "/Assets/no_image_found.png",
-        "readtime" : "6 min",
-        "tags" : ["math", "deepdive"]
-
-    }
-]   
+  {
+    "title": "Designing a Minimal Static Site Generator",
+    "date": "2026-01-15",
+    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae.",
+    "thumbnail": "/Assets/nn thumbnail.png",
+    "tags": [
+      "web",
+      "static-sites",
+      "programming"
+    ],
+    "readtime": "6 min"
+  },
+  {
+    "title": "What is a Neural Network?",
+    "date": "2026-01-15",
+    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae.",
+    "thumbnail": "/Assets/nn thumbnail.png",
+    "tags": [
+      "web",
+      "static-sites",
+      "programming"
+    ],
+    "readtime": "6 min"
+  },
+  {
+    "title": "Super Simple Post",
+    "date": "2026-01-15",
+    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae.",
+    "thumbnail": "/Assets/nn thumbnail.png",
+    "tags": [
+      "web",
+      "static-sites",
+      "programming"
+    ],
+    "readtime": "6 min"
+  }
+]

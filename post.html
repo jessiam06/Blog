@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <nav class="nav-bar">
         <div>
@@ -33,23 +34,21 @@
 
     <div class="page">
         <div class="head">
-            <h1>Hi! I'm <span style="text-decoration: underline #9611D0 3px;">Josiah Essiam</span>,</h1>
-            <h2 style="margin-top: 0; margin-bottom: 30px;">Welcome to my blog.</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
+            <h1 class="title">{{ Title }}</h1>
+            <h2 class="subtitle">{{Subtitle}}.</h2>
 
-        <div class="latest">
-            <h1>Latest Post!</h1>
-            <div class="latest-post-body">
+            <div class="article-metadata">
+                {{date}} | {{readtime}} | {{tags}}
+            </div>
 
+            <div class="head-image">
+                <img src="" alt="{{Thumbnail}}">
             </div>
         </div>
-
-        <div id="post-grid" class="post-grid">
-            
-        </div>
+        <article class="post-content">
+            {{Content}}
+        </article>
     </div>
 
-<script src="script.js"></script>
 </body>
-</html>
+

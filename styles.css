@@ -5,24 +5,26 @@ body{
 }
 
 h1{
-    font-size: 45px;margin-bottom: 0;
+    font-size: 45px;
+    margin-bottom: 0;
 }
 
 img{
     display: block;
 }
 
-.title{
+.name{
     font-weight: bold;
     font-size: 20px;
     margin: 0px;
 }
 
 .nav-bar{
+    position: fixed;
     display: grid;
     grid-template-columns: 15fr 1fr ;
     justify-items: start;
-    margin: 0 50px;
+    margin: 0 40px;
 }
 
 .link-menu{
@@ -46,8 +48,31 @@ img{
     cursor: pointer; 
 }
 
-.welcome{
-    margin-bottom: 20px;
+.head{
+    margin-bottom: 30px;
+}
+
+.title{
+    text-decoration: underline #9611D0 3px;
+}
+
+.subtitle{
+    margin-top: 0; 
+    margin-bottom: 15px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.head-image{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.head-image img{
+    aspect-ratio: 3 / 2;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .page{
@@ -93,10 +118,10 @@ img{
 .post-thumbnail img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: fill;
 }
 
-.metadata{
+.post-card-metadata{
     box-shadow: 0px -2px 2px #161616;
     min-width: 0;
     padding-left: 10px;
