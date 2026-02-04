@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josiah Essiam</title>
+
+    <link rel="stylesheet" href="\static\styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <div>
+           <h1 class="name">Josiah Essiam</h1>
+        </div>
+
+        <div class="link-menu">
+            <div class="link-menu-item">
+                <a class="link" href="/build/index.html">Home</a>
+            </div>
+
+            <div class="link-menu-item">
+                <a class="link" href="https://github.com/jessiam06" target="_blank">GitHub</a>
+            </div>
+
+            <div class="link-menu-item">
+                <a class="link" href="https://www.linkedin.com/in/josiah-essiam-0644a5284/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page">
+        <div class="head">
+            <h1 class="title">Advanced Mechanics</h1>
+            <h2 class="subtitle">Notes from HRK Physics</h2>
+
+            <div class="article-metadata">
+                2026-01-15 | 6 min | web,static-sites,programming
+            </div>
+
+            <div class="head-image">
+                <img src="/Assets/wep.png">
+            </div>
+        </div>
+        <article class="post-content">
+            <h1>Work Done</h1>
+<p>The work done of a force vector $\overrightarrow f$  moving along a displacement vector $\overrightarrow r$ , the Work Done by the force is defined by:</p>
+<p>$$W = \overrightarrow f \cdot \overrightarrow r = fr\cos\theta \tag{1}$$ 
+where $\theta$ is the angle between the vectors.</p>
+<p><strong>The change in kinetic energy of a body is equal to the work done by the force on the body</strong></p>
+<p>Proof:
+Consider a body of mass $m$ moving under the influence of a constant force $f$. By $f = ma$, the acceleration must also be constant. Consider the constant acceleration formula:
+$$v^2-u^2 = 2as$$
+if we multiply both sides by $\frac{m}{2}$:
+$$\frac{1}{2}mv^2 - \frac{1}{2}mu^2 = mas$$
+$$\frac{1}{2}mv^2 - \frac{1}{2}mu^2 = fs$$
+Thus the change in kinetic energy is equal to the work done by the force on the body.</p>
+<p>This theorem is valid for 1D motion with varying force as well
+Proof:</p>
+<p>$$ m\frac{dv}{dt} = f $$By Multiplying both sides by $v = \frac{dx}{dt}$ 
+![[Advanced Mechanics Notes.excalidraw]]
+Where $W(x_1 \rightarrow x_2)$  is the work done by the varying force acting on the body during the displacement from $x_1$ to $x_2$. </p>
+<h1>Conservative and Non-conservative Forces</h1>
+<p>When the work done by a force depends only on the starting and ending positions of the body, the force is said to be <strong>conservative</strong>. 
+![[Conservative forves.excalidraw]]
+Since $x_3$ is an arbitrary point, it's implied that the work done is determined only by its starting and ending points, and thus are conservative. The <strong>gravitational</strong> and <strong>elastic</strong> forces are examples of this.</p>
+<p>The opposite of this is a <strong>non-conservative force</strong>. I.e a force that depends on the path of motion as well as the end points. An example of this is the frictional force. The frictional force is always opposite to the direction of motion. Therefore from (1), the angle between the force and displacement vectors is 180 degrees, and therefore the work done is negative. Following the same process as above, it can be shown that the work done depends on the path travelled.</p>
+<h1>Potential Energy</h1>
+<p>A <strong>potential energy function</strong> can be defined for a conservative force. Consider a body that moves from point $P$ to $O$ under the action of a force $\overrightarrow f$ , then we know that the work done by the force $W(P \rightarrow O)$ is determined by the positions of $P$ and $O$. The <strong>potential energy</strong> possessed by the body at $P$, $U(P)$ is defined as:
+$$U(P) = W(P \rightarrow O )$$
+This of course depends on teh point O, which is called the <strong>reference point</strong>. </p>
+<p>Since non-conservative forces depend on the path taken, we cannot define a potential energy function in this way for non-conservative forces.</p>
+<p>Some examples of Potential Energy:</p>
+<h2>Gravitational Potential Energy</h2>
+<p>We usually choose the <strong>ground</strong> as the reference point for GPE, so that its value at height $h_0$ is equal to the work done by gravity as the body moves from its initial height to the ground.</p>
+        </article>
+    </div>
+
+</body>
+

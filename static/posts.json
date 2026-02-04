@@ -40,5 +40,19 @@
     ],
     "readtime": "6 min",
     "link": "/build/posts/Super Simple Post.html"
+  },
+  {
+    "title": "Advanced Mechanics",
+    "subtitle": "Notes from HRK Physics",
+    "date": "2026-01-15",
+    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae.",
+    "thumbnail": "/Assets/wep.png",
+    "tags": [
+      "web",
+      "static-sites",
+      "programming"
+    ],
+    "readtime": "6 min",
+    "link": "/build/posts/Advanced Mechanics.html"
   }
 ]
